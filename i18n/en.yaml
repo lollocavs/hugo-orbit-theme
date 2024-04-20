@@ -8,6 +8,8 @@
   translation: Languages
 - id: projects
   translation: Projects
+- id: certifications
+  translation: Certifications
 - id: skills
   translation: Skills & Proficiency
 - id: summary
