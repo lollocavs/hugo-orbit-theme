@@ -4,8 +4,18 @@
                     <p>{{ with .Site.Params.certifications.intro }}{{ . | markdownify }}{{ end }}</p>
                 </div><!--//intro-->
 				{{ range .Site.Params.certifications.list }}
-                <div class="item">
+               <!--  <div class="item">
                     <span class="project-title"><a href="{{ .url }}">{{ .title }}</a></span> - <span class="project-tagline">{{ with .tagline }}{{ . | markdownify }}{{ end }}</span>
+                </div><!--//item--> -->
+                <div class="item">
+                    <div class="meta">
+                        <div class="upper-row">
+                            <h3 class="job-title">{{ .title }}</h3>
+                            <div class="time">{{ .dates }}</div>
+                    </div><!--//meta-->
+                    <div class="details">
+                        <p>{{ with .details }}{{ . | markdownify }}{{ end }}</p>
+                    </div><!--//details-->
                 </div><!--//item-->
 				{{ end }}
             </section><!--//section-->
