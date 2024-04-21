@@ -6,14 +6,14 @@
 				{{ range .Site.Params.certifications.list }}
                <!--  <div class="item">
                     <span class="project-title"><a href="{{ .url }}">{{ .title }}</a></span> - <span class="project-tagline">{{ with .tagline }}{{ . | markdownify }}{{ end }}</span>
-                </div><!--//item--> -->
+                </div>//item-->
                 <div class="item">
                     <div class="meta">
                         <div class="upper-row">
                             <h3 class="job-title">{{ .title }}</h3>
                             <div class="time">{{ .dates }}</div>
                         </div><!--//upper-row-->
-                        <div class="company">{{ .istituite }}</div>
+                        <div class="company">{{ .istitute }}</div>
                     </div><!--//meta-->
                     <div class="details">
                         <p>{{ with .details }}{{ . | markdownify }}{{ end }}</p>
